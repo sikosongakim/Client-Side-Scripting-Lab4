@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Loop Example</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        // Function to display numbers from 1 to a specified limit using a for loop
+        function displayNumbers(limit) {
+            let text = "";
+            for (let i = 1; i <= limit; i++) {
+                text += `The number is ${i}<br>`;
+            }
+            document.getElementById("output").innerHTML = text;
+        }
+
+        // Calling function to display numbers from 1 to 5
+        displayNumbers(5);
+    </script>
+</body>
+</html>

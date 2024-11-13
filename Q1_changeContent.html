@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Paragraph Content</title>
+</head>
+<body>
+    <div id="content">
+        <p id="text">Welcome to my website!</p>
+    </div>
+    <button onclick="changeText('Hello there!')">Change Text</button>
+
+    <script>
+        // Function to update the content of an element by ID
+        function updateContent(elementId, newText) {
+            document.getElementById(elementId).innerText = newText;
+        }
+
+        // Function to change text using updateContent for reusability
+        function changeText(newText) {
+            updateContent("text", newText);
+        }
+    </script>
+</body>
+</html>
